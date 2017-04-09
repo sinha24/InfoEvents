@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.infoevents"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sa"
+        android:label="@string/app_name"
+    
+        android:theme="@style/AppTheme" android:enabled="true">
+        <activity
+            android:name="com.example.infoevents.New_home1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="MainActivity"></activity>
+        <activity android:name="Event_Upload" ></activity>
+        <activity android:name="MainActivity2"></activity>
+        <activity android:name="UserRegister" ></activity>
+        <activity android:name="EUpload"></activity>
+        <activity android:name="ViewEvent"></activity>
+        <activity android:name="AdminMainActivity2"></activity>
+        <activity android:name="AdminViewEvent"></activity>
+        <activity android:name="AdminMainActivity"></activity>
+        <activity android:name="AdminVIewAllMainActivity2"></activity>
+        
+    </application>
+
+</manifest>

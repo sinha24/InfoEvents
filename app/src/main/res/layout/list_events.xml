@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/li">
+
+   <ScrollView
+        android:layout_width="fill_parent"
+        android:background="@drawable/li"
+        android:layout_height="match_parent" >
+        
+     <RelativeLayout
+         android:id="@+id/form_layout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@drawable/li" >
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/noimg" />
+
+    <TextView
+        android:id="@+id/textinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgview"
+        android:layout_marginTop="18dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   
+
+    <Button
+        android:id="@+id/bmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textinfo"
+        android:gravity="center"
+        android:text="On Map" />
+
+     <Button
+         android:id="@+id/taxi"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/bmap"
+         android:layout_toRightOf="@+id/bmap"
+         android:gravity="center"
+         android:text="Call Taxi" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

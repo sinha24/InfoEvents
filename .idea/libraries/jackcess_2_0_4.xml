@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jackcess-2.0.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/jackcess-2.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
